@@ -1,5 +1,5 @@
 # Surf and Treats!
-![Pitch](images/2020/07/pitch.png)
+![Pitch](images/pitch.png)
 
 #### This repo demonstrate some techniques using SQL, SQLAlchemy, Flask, Python, Pandas, statistical analysis, and ploting to present an analysis pitch for a surf and ice cream store in Hawaii.  
 
@@ -44,7 +44,7 @@ December
 |75%     |    0.150000
 |max     |    6.420000
 
-![June and December Precipitation](images/2020/07/june-and-december-precipitation.png)
+![June and December Precipitation](images/june-and-december-precipitation.png)
 
 # Limitation of Analysis and Recommendation
 - With the data and analysis at hand we do not know when are rains occurring, if it is during the day or at night
