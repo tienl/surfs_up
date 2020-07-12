@@ -4,7 +4,7 @@
 #### This repo demonstrate some techniques using SQL, SQLAlchemy, Flask, Python, Pandas, statistical analysis, and ploting to present an analysis pitch for a surf and ice cream store in Hawaii.  
 
 
-- `hawaii.sqlite` - data source file
+- `hawaii.sqlite` - data source file (precipitation values are assumed measured in  inches)
 - `climate_analysis.ipynb` - Jupyter notebook notes
 - `app.py` - Python code with routes for Flask showing sqlite file data
 - `surfs_challenge.ipynb` - Jupyter notebook of python code showing the final
@@ -14,7 +14,7 @@ analysis
 After previous rounds of data gathering and presentation, I am following up on
 data requested for seasonality and viability of the surf and ice cream shop.
 Below is the data we've found by looking at all the June and December months
-precipitation across our entire data set (2010-01-01 to 2017-08-23).  From the analysis of the data, we can see that in June, we average .13 inches of rain.  And in December, we average .22 inches of rain.  It is clear that there are seasonal differences of rainfall between months.  To put in perspective, .1" and .25" of rain are defined by rain insurance agencies as categories next to each other.  (Source:https://www.usweatherinsurance.com/rain-insurance/).  We also know that the max rainfall between seasons are about 2 inches, which is significant.  Finally, 3rd quartile stats of both months show similarity of .12 and .15 inches.  This tells us, most rainfall amount in June is similar to December.  
+precipitation across our entire data set (2010-01-01 to 2017-08-23).  From the analysis of the data, we can see that in June, we average .13 inches of rain.  And in December, we average .22 inches of rain.  It is clear that there are seasonal differences of rainfall between months.  To put in perspective, .1" and .25" of rain are defined by rain insurance agencies as categories next to each other.  (Source:https://www.usweatherinsurance.com/rain-insurance/).  We also know that the max rainfall difference between June and December are about 2 inches (4.43 vs 6.42).  Also worth to note that 3rd quartile stats of both months show similarity of .12 and .15 inches.  So in summary of the 2 months, most rainfall amount are similar, but on extreme days there are notable differences in the amount of rain as well.  
 
 References:
 
@@ -47,6 +47,7 @@ December
 ![June and December Precipitation](images/june-and-december-precipitation.png)
 
 # Limitation of Analysis and Recommendation
+_The dataset presented was given as a trusted source file, minimal data validation were performed.  Data is assumed to be accurate and not corrupt (no repeats, and all outliers are trusted, etc)_
 - With the data and analysis at hand we do not know when are rains occurring, if it is during the day or at night
 - We also do not know how frequent rain is occurring on a month by month basis
 - We also had not examined the severity of the rain.  
